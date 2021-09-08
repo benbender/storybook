@@ -1,10 +1,18 @@
-import { start } from '@storybook/core/client';
-import { decorateStory } from './decorators';
-
+import { start } from '@storybook/core';
+import { Story } from './types';
 import './globals';
+import { decorateStory } from './decorators';
 import render from './render';
 
-const { configure: coreConfigure, clientApi, forceReRender } = start(render, { decorateStory });
+const framework = 'svelte';
+
+const globalRender: Story = (props) => ({ props });
+
+const api = start(render, { decorateStory });
+
+api.clientApi.globalRender = globalRender;
+
+const { configure: coreConfigure, clientApi, forceReRender } = api;
 
 export const {
   setAddon,
@@ -15,9 +23,11 @@ export const {
   raw,
 } = clientApi;
 
-const framework = 'svelte';
 export const storiesOf = (kind: string, m: any) =>
   clientApi.storiesOf(kind, m).addParameters({ framework });
+
 export const configure = (loadable: any, m: any) => coreConfigure(framework, loadable, m);
 
 export { forceReRender };
+
+export * from './types';

@@ -23,6 +23,9 @@ module.exports = {
     '@storybook/addon-viewport',
     '@storybook/addon-a11y',
   ],
+  features: {
+    previewCsfV3: true,
+  },
   webpackFinal: async (config) => {
     config.module.rules.push({
       test: [/\.stories\.js$/, /index\.js$/],

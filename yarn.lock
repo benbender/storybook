@@ -9359,6 +9359,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@testing-library/dom@npm:^7.0.3, @testing-library/dom@npm:^7.31.2":
+  version: 7.31.2
+  resolution: "@testing-library/dom@npm:7.31.2"
+  dependencies:
+    "@babel/code-frame": ^7.10.4
+    "@babel/runtime": ^7.12.5
+    "@types/aria-query": ^4.2.0
+    aria-query: ^4.2.2
+    chalk: ^4.1.0
+    dom-accessibility-api: ^0.5.6
+    lz-string: ^1.4.4
+    pretty-format: ^26.6.2
+  checksum: 51498f6552b669a547202f4f508a1e91b5a0c25a64be987e49601ec00f3d0cc514c591400f0ad49d91b7d522e40e29b29a209aecd43f8611e2240b1ba3d4f93d
+  languageName: node
+  linkType: hard
+
 "@testing-library/dom@npm:^7.28.1, @testing-library/dom@npm:^7.29.4":
   version: 7.29.6
   resolution: "@testing-library/dom@npm:7.29.6"
@@ -9372,22 +9388,6 @@ __metadata:
     lz-string: ^1.4.4
     pretty-format: ^26.6.2
   checksum: 89763c418e7fe413485afe37b1db3d5ecd934b3bafc9c8dfb78e774d85b702916f022f879de1fd5131d70eab47a071a159e003bc165e7df7031abddb19ebcd9a
-  languageName: node
-  linkType: hard
-
-"@testing-library/dom@npm:^7.31.2":
-  version: 7.31.2
-  resolution: "@testing-library/dom@npm:7.31.2"
-  dependencies:
-    "@babel/code-frame": ^7.10.4
-    "@babel/runtime": ^7.12.5
-    "@types/aria-query": ^4.2.0
-    aria-query: ^4.2.2
-    chalk: ^4.1.0
-    dom-accessibility-api: ^0.5.6
-    lz-string: ^1.4.4
-    pretty-format: ^26.6.2
-  checksum: 51498f6552b669a547202f4f508a1e91b5a0c25a64be987e49601ec00f3d0cc514c591400f0ad49d91b7d522e40e29b29a209aecd43f8611e2240b1ba3d4f93d
   languageName: node
   linkType: hard
 
@@ -9420,6 +9420,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@testing-library/svelte@npm:^3.0.3":
+  version: 3.0.3
+  resolution: "@testing-library/svelte@npm:3.0.3"
+  dependencies:
+    "@testing-library/dom": ^7.0.3
+  peerDependencies:
+    svelte: 3.x
+  checksum: ed7b4ffb992b3fa2eeb9891617047c24faf65156ae86f144e7b661dd7ed912e7be79675700618e66987fe5f16562432eb646ea1cc06f3f12cf4bf7b72108b379
+  languageName: node
+  linkType: hard
+
 "@testing-library/user-event@npm:^12.6.0":
   version: 12.7.3
   resolution: "@testing-library/user-event@npm:12.7.3"
@@ -9439,6 +9450,17 @@ __metadata:
   peerDependencies:
     "@testing-library/dom": ">=7.21.4"
   checksum: 1f9a563cd304257fba64c8099c12690522fc9870ef8b9456ec3763d4afa6f2afc11b7047c364cf2543f00b2015d4b92a4099a62f7b89107bbd18eda6735e4cb1
+  languageName: node
+  linkType: hard
+
+"@testing-library/user-event@npm:^13.2.1":
+  version: 13.2.1
+  resolution: "@testing-library/user-event@npm:13.2.1"
+  dependencies:
+    "@babel/runtime": ^7.12.5
+  peerDependencies:
+    "@testing-library/dom": ">=7.21.4"
+  checksum: ef9543531e39b3ee4d2aed1cd67b69038bbc8ca8b6c656d5717c5bc4f27e2d249978bfe2c339d8124330765d899e9d75df87f96151ba2732e2118e265354b31e
   languageName: node
   linkType: hard
 
@@ -15581,7 +15603,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"buffer-crc32@npm:~0.2.3":
+"buffer-crc32@npm:^0.2.5, buffer-crc32@npm:~0.2.3":
   version: 0.2.13
   resolution: "buffer-crc32@npm:0.2.13"
   checksum: cb0a8ddf5cf4f766466db63279e47761eb825693eeba6a5a95ee4ec8cb8f81ede70aa7f9d8aeec083e781d47154290eb5d4d26b3f7a465ec57fb9e7d59c47150
@@ -21160,6 +21182,13 @@ __metadata:
     es6-symbol: ~3.1.1
     event-emitter: ~0.3.5
   checksum: 62fe1a90ead1704bed699cb9c975e642023f590d5338c2a640d60ce0a846de7d5197561393ac03dd11473b96087cf8793c9e4836fe05ad4d2ef6afda6b9a3511
+  languageName: node
+  linkType: hard
+
+"es6-promise@npm:^3.1.2":
+  version: 3.3.1
+  resolution: "es6-promise@npm:3.3.1"
+  checksum: b4fc87cb8509c001f62f860f97b05d1fd3f87220c8b832578e6a483c719ca272b73a77f2231cb26395fa865e1cab2fd4298ab67786b69e97b8d757b938f4fc1f
   languageName: node
   linkType: hard
 
@@ -39684,6 +39713,18 @@ resolve@1.19.0:
   languageName: node
   linkType: hard
 
+"sander@npm:^0.5.0":
+  version: 0.5.1
+  resolution: "sander@npm:0.5.1"
+  dependencies:
+    es6-promise: ^3.1.2
+    graceful-fs: ^4.1.3
+    mkdirp: ^0.5.1
+    rimraf: ^2.5.2
+  checksum: ce1e423fe5b4e57926df7cc6bd24b70271adfbe7b8ff995784f98101878e037327ac31c7a4e317ac3e1579f410e41a477fef40c2376f0dfa4499c8864a26f499
+  languageName: node
+  linkType: hard
+
 "sane@npm:^4.0.0, sane@npm:^4.0.3, sane@npm:^4.1.0":
   version: 4.1.0
   resolution: "sane@npm:4.1.0"
@@ -40669,6 +40710,20 @@ resolve@1.19.0:
   languageName: node
   linkType: hard
 
+"sorcery@npm:^0.10.0":
+  version: 0.10.0
+  resolution: "sorcery@npm:0.10.0"
+  dependencies:
+    buffer-crc32: ^0.2.5
+    minimist: ^1.2.0
+    sander: ^0.5.0
+    sourcemap-codec: ^1.3.0
+  bin:
+    sorcery: bin/index.js
+  checksum: 4b939487c4c157d27b9477c0948def0d10aab3891dc33f2d140a1710a10ef50fa7cf4e22e2c4564226942ec719ce0eb83c8b9096708533c888de34a673ee5934
+  languageName: node
+  linkType: hard
+
 "sort-keys@npm:^1.0.0":
   version: 1.1.2
   resolution: "sort-keys@npm:1.1.2"
@@ -40828,7 +40883,7 @@ resolve@1.19.0:
   languageName: node
   linkType: hard
 
-"sourcemap-codec@npm:^1.4.1, sourcemap-codec@npm:^1.4.4, sourcemap-codec@npm:^1.4.8":
+"sourcemap-codec@npm:^1.3.0, sourcemap-codec@npm:^1.4.1, sourcemap-codec@npm:^1.4.4, sourcemap-codec@npm:^1.4.8":
   version: 1.4.8
   resolution: "sourcemap-codec@npm:1.4.8"
   checksum: f099279fdaae070ff156df7414bbe39aad69cdd615454947ed3e19136bfdfcb4544952685ee73f56e17038f4578091e12b17b283ed8ac013882916594d95b9e6
@@ -41967,9 +42022,11 @@ resolve@1.19.0:
     "@storybook/addons": 6.4.0-alpha.33
     "@storybook/source-loader": 6.4.0-alpha.33
     "@storybook/svelte": 6.4.0-alpha.33
+    "@testing-library/svelte": ^3.0.3
+    "@testing-library/user-event": ^13.2.1
     global: ^4.4.0
-    svelte-jester: 1.3.0
-    svelte-preprocess: 4.6.8
+    svelte-jester: 1.8.2
+    svelte-preprocess: 4.9.2
   languageName: unknown
   linkType: soft
 
@@ -41982,14 +42039,13 @@ resolve@1.19.0:
   languageName: node
   linkType: hard
 
-"svelte-jester@npm:1.3.0":
-  version: 1.3.0
-  resolution: "svelte-jester@npm:1.3.0"
-  dependencies:
-    cosmiconfig: ^6.0.0
+"svelte-jester@npm:1.8.2":
+  version: 1.8.2
+  resolution: "svelte-jester@npm:1.8.2"
   peerDependencies:
+    jest: <= 26
     svelte: ">= 3"
-  checksum: 93cdafb60470e8365c2c67a2acf05cd55d7b5a6bad0d477417510a7e4834fb519de598204550d5925ed7d0f9cc2d35efdf10f678ec445e0b83451cd3700f2b95
+  checksum: 71d97ff19ce56601411c109103b0eed72444b713e221a60ef40a5352a9c816baf33862532f9084d33512ed59c37fcf43a86aa8483c9c7e01445b62a7b4307301
   languageName: node
   linkType: hard
 
@@ -42006,13 +42062,15 @@ resolve@1.19.0:
   languageName: node
   linkType: hard
 
-"svelte-preprocess@npm:4.6.8":
-  version: 4.6.8
-  resolution: "svelte-preprocess@npm:4.6.8"
+"svelte-preprocess@npm:4.9.2":
+  version: 4.9.2
+  resolution: "svelte-preprocess@npm:4.9.2"
   dependencies:
     "@types/pug": ^2.0.4
     "@types/sass": ^1.16.0
     detect-indent: ^6.0.0
+    magic-string: ^0.25.7
+    sorcery: ^0.10.0
     strip-indent: ^3.0.0
   peerDependencies:
     "@babel/core": ^7.10.2
@@ -42049,7 +42107,7 @@ resolve@1.19.0:
       optional: true
     typescript:
       optional: true
-  checksum: 976044066cfa20d26ae1bc6c517a45437083ee0cb4e22faf9d113e367338457f3517ba9578bdd06838fcf60650d89d851a4e39fa694bac52fe90d5ac75aa0757
+  checksum: 43cbb8f153999be415c012c12c756c9fbc1147dec178f672392d5b01c0c3b0f370b9f4efc017606e31402de263cd07960181392a7432ace64a893739bfc98036
   languageName: node
   linkType: hard
 
